@@ -2,7 +2,7 @@ FROM lsiobase/alpine.python:3.7
 
 # Set python to use utf-8 rather than ascii.
 ENV PYTHONIOENCODING="UTF-8"
-ENV TORRENT_PLUGIN transmission|deluge
+ENV TORRENT_PLUGIN="transmission|deluge"
 
 # Copy local files.
 COPY etc/ /etc
